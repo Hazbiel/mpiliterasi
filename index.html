@@ -1,0 +1,144 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><title>Bedah Cerita – MPI Unsur Intrinsik Kelas IX</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff7e6;--sf:#fff;--ink:#1d2557;--mut:#5b6390;--pr:#5b4bff;--ac:#ffc83d;--ok:#1fb58f;--no:#ff5d6c;--ln:#1d2557;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#14173a;--sf:#1f2352;--ink:#f3f1ff;--mut:#b4b8e6;--ln:#8a90ff}}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:500 16px/1.6 Nunito,system-ui,sans-serif}
+h1,h2,h3{font-family:"Baloo 2","Trebuchet MS",system-ui,sans-serif;line-height:1.15;margin:.2em 0 .4em}h1{font-size:2.3rem;font-weight:800}h2{font-size:1.6rem}h3{font-size:1.2rem}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--sf);border-bottom:3px solid var(--ln);padding:8px 12px}
+.hud{display:flex;align-items:center;gap:10px;max-width:760px;margin:auto}.av{font-size:1.8rem}
+.xp{flex:1}.xp b{font-size:.85rem}.bar{height:12px;border:2px solid var(--ln);border-radius:9px;background:var(--bg);overflow:hidden}.bar i{display:block;height:100%;background:var(--ac);transition:width .5s}
+#bd{font-size:1.3rem;letter-spacing:2px}
+nav{display:flex;gap:6px;overflow-x:auto;max-width:760px;margin:8px auto 0;padding-bottom:4px}
+nav button{flex:none;font:700 .8rem Nunito,sans-serif;border:2px solid var(--ln);background:var(--bg);color:var(--ink);border-radius:20px;padding:4px 10px;cursor:pointer}
+nav button.on{background:var(--pr);color:#fff}nav button.dn{background:var(--ok);color:#fff}nav button:disabled{opacity:.45;cursor:not-allowed}
+main{max-width:760px;margin:auto;padding:16px 14px 60px}
+.card{background:var(--sf);border:3px solid var(--ln);border-radius:18px;box-shadow:5px 5px 0 var(--ln);padding:16px;margin:0 0 16px}
+.btn,.opt,.chip,.cat{font:700 1rem Nunito,sans-serif;color:var(--ink);cursor:pointer}
+.btn{background:var(--pr);color:#fff;border:3px solid var(--ln);border-radius:14px;padding:10px 20px;box-shadow:3px 3px 0 var(--ln);margin-top:8px}.btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ln)}
+.btn.g{background:var(--ac);color:#1d2557}
+.opt{display:block;width:100%;text-align:left;background:var(--bg);border:3px solid var(--ln);border-radius:14px;padding:10px 14px;margin:8px 0}
+.opt:hover:not(:disabled){background:var(--ac);color:#1d2557}.opt.y{background:var(--ok);color:#fff}.opt.n{background:var(--no);color:#fff}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--pr);outline-offset:2px}
+.fb{border-radius:12px;padding:10px 12px;margin-top:10px;font-weight:700}.fb.y{background:#d8f6ec;color:#0a5c47}.fb.n{background:#ffe3e6;color:#8a1626}
+.pg{font-size:.85rem;color:var(--mut);font-weight:800}
+blockquote{margin:8px 0;padding:10px 14px;border-left:6px solid var(--ac);background:var(--bg);border-radius:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.grid .opt{text-align:center;margin:0}
+.sc{border-radius:14px;padding:14px;color:#fff;font-weight:800;text-align:center;border:3px solid var(--ln)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+mark{border-radius:6px;padding:0 3px;cursor:pointer;color:#1d2557}.mT{background:#ffd2d6}.mL{background:#c9ecff}.mK{background:#ffe9a6}
+.chip{display:inline-block;background:var(--ac);color:#1d2557;border:3px solid var(--ln);border-radius:12px;padding:6px 10px;margin:4px}.chip.sel{background:var(--pr);color:#fff}
+.cat{display:block;width:100%;background:var(--bg);border:3px dashed var(--ln);border-radius:14px;padding:10px;margin:6px 0;text-align:left}
+.cat span{display:inline-block;background:var(--ok);color:#fff;border-radius:10px;padding:2px 8px;margin:2px;font-size:.85rem}
+select,input[type=text],textarea{font:600 1rem Nunito,sans-serif;border:3px solid var(--ln);border-radius:10px;padding:6px 8px;background:var(--bg);color:var(--ink);max-width:100%}
+textarea,input[type=text]{width:100%}
+svg text{font:800 14px Nunito,sans-serif;fill:#1d2557;pointer-events:none}.node{fill:var(--ac);stroke:var(--ln);stroke-width:3}.edge{stroke:var(--pr);stroke-width:5;cursor:pointer;fill:none}.edge:hover,.edge.on{stroke:var(--no)}
+.tip{background:var(--bg);border-radius:10px;padding:8px 12px;margin-top:8px;min-height:2.6em}
+#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translate(-50%,100px);background:var(--ink);color:var(--bg);padding:8px 18px;border-radius:20px;font-weight:800;transition:transform .3s;z-index:9}#toast.s{transform:translate(-50%,0)}
+.big{font-size:3.5rem;text-align:center}.res{display:flex;gap:8px;align-items:center;margin:6px 0}.res .bar{flex:1}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+@media(max-width:520px){.two{grid-template-columns:1fr}h1{font-size:1.9rem}}
+</style></head><body>
+<header><div class="hud"><div class="av">🦉</div><div class="xp"><b id="lv"></b><div class="bar"><i id="xb"></i></div></div><div id="bd" title="Lencana"></div></div><nav id="nav"></nav></header>
+<main id="m"></main><div id="toast"></div>
+<script>
+const ST=[['🏠','Beranda'],['🤔','Apersepsi'],['🧭','Asesmen Awal'],['📚','Materi'],['🔬','Bedah Cerita'],['🎯','Kuis'],['🏁','Asesmen Akhir'],['🪞','Refleksi'],['📊','Hasil']];
+const TT=['Pembaca Pemula','Penjelajah Cerita','Detektif Teks','Analis Sastra','Maestro Cerita'];
+const S={name:'',xp:0,cur:0,done:[],bd:[],aw:null,ak:null,tg:{},st:0};
+const $=s=>document.querySelector(s),M=$('#m');
+function toast(t){const e=$('#toast');e.textContent=t;e.className='s';setTimeout(()=>e.className='',1800)}
+function hud(){const l=Math.min(4,Math.floor(S.xp/60));$('#lv').textContent=`Lv ${l+1} ${TT[l]} · ${S.xp} XP`;$('#xb').style.width=(l==4?100:(S.xp%60)/60*100)+'%';$('#bd').textContent=S.bd.map(b=>b[0]).join('');
+$('#nav').innerHTML=ST.map((s,i)=>`<button class="${i==S.cur?'on':S.done.includes(i)?'dn':''}" ${ok(i)?'':'disabled'} onclick="go(${i})">${S.done.includes(i)?'✔':s[0]} ${s[1]}</button>`).join('')}
+function ok(i){for(let j=0;j<i;j++)if(!S.done.includes(j))return false;return true}
+function xp(n){const a=Math.floor(S.xp/60);S.xp+=n;toast('+'+n+' XP ✨');if(Math.floor(S.xp/60)>a&&S.xp<300)setTimeout(()=>toast('🎉 Naik level!'),1900);hud()}
+function bdg(e,t){if(!S.bd.some(b=>b[0]==e)){S.bd.push([e,t]);setTimeout(()=>toast(`${e} Lencana: ${t}`),900);hud()}}
+function fin(i){if(!S.done.includes(i))S.done.push(i);hud()}
+function go(i){S.cur=i;M.innerHTML='';R[i]();hud();scrollTo(0,0)}
+const nx=i=>`<button class="btn g" onclick="go(${i+1})">Lanjut ▶</button>`;
+function say(t){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='id-ID';speechSynthesis.speak(u)}catch(e){}}
+
+function quiz(el,qs,o){let i=0,sc=0,tg={};(function show(){const q=qs[i];if(!q)return o.end(sc,tg);
+const ix=q.o.map((_,k)=>k).sort(()=>Math.random()-.5);
+el.innerHTML=`<div class=pg>Soal ${i+1} dari ${qs.length}${q.lv?' · '+q.lv:''}</div>${q.p?`<blockquote>${q.p}</blockquote>`:''}<h3>${q.q}</h3>`+ix.map(k=>`<button class=opt data-k=${k}>${q.o[k]}</button>`).join('')+'<div id=fb></div>';
+el.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{const k=+b.dataset.k,y=k==0;el.querySelectorAll('.opt').forEach(x=>{x.disabled=true;if(x.dataset.k==0)x.classList.add('y')});if(!y)b.classList.add('n');
+tg[q.k]=tg[q.k]||[0,0];tg[q.k][1]++;if(y){sc++;tg[q.k][0]++;S.st++;if(o.xp)xp(o.xp+(S.st>=3?5:0));if(S.st==3)bdg('⚡','Kombo 3 jawaban benar')}else S.st=0;if(o.diag)xp(5);
+el.querySelector('#fb').innerHTML=`<div class="fb ${y?'y':'n'}">${y?'✅ Tepat!':'💡 Belum tepat.'} ${q.f}</div><button class=btn id=nb>${i+1<qs.length?'Soal berikutnya ▶':'Selesai ✔'}</button>`;
+$('#nb').onclick=()=>{i++;show()}})})()}
+const pct=(a,b)=>b?Math.round(a/b*100):0;
+
+const AW=[
+{k:'latar',q:'Cerita berlatar hutan gelap pada malam hari. Suasana yang paling mungkin terbentuk adalah …',o:['Mencekam','Riang gembira','Lucu','Hangat'],f:'Tempat dan waktu dapat membentuk suasana cerita.'},
+{k:'tokoh',q:'Dika selalu menolak membantu temannya dan hanya memikirkan diri sendiri. Hal ini menunjukkan …',o:['Watak tokoh (penokohan)','Alur cerita','Latar waktu','Amanat'],f:'Cara tokoh bersikap menggambarkan wataknya.'},
+{k:'konflik',q:'Manakah yang termasuk konflik?',o:['Rina bingung memilih antara membantu ibu atau ikut latihan','Rina tinggal di sebuah desa','Cerita ditulis dengan kata “aku”','Cerita terjadi pada pagi hari'],f:'Konflik adalah masalah yang menggerakkan cerita.'},
+{k:'hubungan',q:'Tokoh yang pemarah sering memicu pertengkaran. Hubungan unsur yang tepat adalah …',o:['Tokoh memengaruhi konflik','Latar memengaruhi amanat','Sudut pandang memengaruhi judul','Alur memengaruhi nama tokoh'],f:'Unsur dalam cerita saling memengaruhi.'},
+{k:'prediksi',q:'Bagas selalu jujur. Suatu hari ia menemukan dompet berisi banyak uang. Kelanjutan yang paling logis …',o:['Ia berusaha mengembalikan dompet itu','Ia pindah ke kota lain','Ia tiba-tiba menjadi pelit','Ia lupa namanya'],f:'Prediksi yang baik bersandar pada bukti dalam teks.'}];
+const KZ=[
+{lv:'Level 1 · Mengenali',k:'identifikasi',q:'Pesan “jangan mudah menyerah” yang bisa dipetik pembaca termasuk unsur …',o:['Amanat','Alur','Latar','Tokoh'],f:'Amanat adalah pesan atau nilai yang dapat diambil dari cerita.'},
+{lv:'Level 1 · Mengenali',k:'identifikasi',q:'Cerita dituturkan oleh “aku” yang ikut mengalami peristiwa. Sudut pandang yang dipakai adalah …',o:['Orang pertama pelaku utama','Orang ketiga serba tahu','Orang ketiga pengamat','Orang kedua'],f:'Kata “aku” menandai sudut pandang orang pertama.'},
+{lv:'Level 2 · Menghubungkan',k:'hubungan',p:'Sinta ingin mengikuti lomba, tetapi orang tuanya melarang karena nilai sekolahnya menurun.',q:'Hubungan unsur yang paling tepat adalah …',o:['Tokoh dan konflik','Latar dan amanat','Sudut pandang dan tema','Alur dan latar'],f:'Keinginan Sinta berbenturan dengan larangan orang tua: tokoh melahirkan konflik.'},
+{lv:'Level 3 · Menganalisis',k:'hubungan',p:'Di sebuah rumah tua pada tengah malam, Andi mendengar suara langkah kaki.',q:'Bagaimana latar memengaruhi suasana?',o:['Membuat suasana lebih menegangkan','Tidak berpengaruh','Mengubah nama tokoh','Menentukan jumlah paragraf'],f:'Rumah tua + tengah malam = suasana tegang.'},
+{lv:'Level 3 · Menganalisis',k:'hubungan',p:'Konflik makin panas ketika Ayu dituduh mencuri dan tak ada yang percaya padanya.',q:'Pengaruh konflik tersebut terhadap alur adalah …',o:['Membawa cerita menuju puncak masalah','Mengakhiri cerita seketika','Mengganti latar tempat','Menghapus tokoh utama'],f:'Konflik yang meningkat mendorong alur ke klimaks.'},
+{lv:'Level 4 · HOTS',k:'inferensi',p:'Tono dikenal pendiam. Saat banjir datang, ia justru berlari memimpin warga mengungsi meski suaranya bergetar.',q:'Peristiwa banjir paling tepat dimaknai sebagai …',o:['Pemicu yang menampakkan keberanian tersembunyi Tono','Bukti Tono tidak peduli warga','Tanda cerita bersudut pandang orang kedua','Alasan Tono pindah rumah'],f:'Peristiwa (latar/konflik) mengungkap sisi lain tokoh.'}];
+const P='Malam itu listrik padam di Desa Karang. Bu Wati, guru yang tegas namun sabar, tetap membuka sekolah agar anak-anak tidak takut gelap. Bimo, murid yang suka usil, meledek, “Percuma belajar, Bu. Gelap begini!” Bu Wati tidak marah. Ia menyalakan sebuah lentera dan mengajak semua duduk melingkar. Hujan mengetuk atap seng; suasana terasa dingin dan sunyi. Perlahan Bimo ikut mendekat ke cahaya. Saat Bu Wati bercerita tentang pelaut yang berlayar dengan satu bintang, Bimo terdiam dan mendengarkan sampai habis.';
+const AK=[
+['identifikasi','Latar waktu dalam teks tersebut adalah …',['Malam hari saat listrik padam','Pagi hari di sekolah','Siang saat ujian','Sore di pelabuhan'],'Petunjuk: “Malam itu listrik padam”.'],
+['identifikasi','Watak Bu Wati yang paling tepat adalah …',['Sabar dan tegas','Pemarah dan pendendam','Penakut dan pendiam','Usil dan sombong'],'Ia tegas membuka sekolah, sabar menghadapi ledekan.'],
+['identifikasi','Konflik awal dalam cerita ditandai oleh …',['Ledekan Bimo yang meremehkan belajar','Hujan yang turun deras','Cerita tentang pelaut','Lentera yang menyala'],'Ledekan Bimo memunculkan ketegangan dengan Bu Wati.'],
+['hubungan','Sifat Bu Wati memengaruhi penyelesaian konflik karena …',['Kesabarannya membuat ia menanggapi ledekan dengan tenang','Kemarahannya membuat Bimo takut','Ia tidak peduli pada Bimo','Ia meninggalkan kelas'],'Penokohan memengaruhi cara konflik diselesaikan.'],
+['hubungan','Hubungan latar dan suasana pada teks adalah …',['Hujan dan gelap membangun suasana dingin dan sunyi','Sekolah membuat suasana ramai','Desa Karang membuat suasana lucu','Lentera membuat suasana marah'],'Latar memengaruhi suasana.'],
+['prediksi','Perkembangan paling logis setelah cerita pelaut adalah …',['Bimo lebih menghargai belajar dan berhenti meledek','Bimo marah dan pulang','Bu Wati menutup sekolah','Listrik padam selamanya'],'Bimo terdiam dan mendengarkan: tanda ia mulai berubah.'],
+['inferensi','Bimo mulai berubah sikap karena …',['Bu Wati menanggapi dengan tenang dan bercerita menarik','Ia dihukum berat','Ia takut pada hujan','Ia ingin cepat pulang'],'Bukti: “tidak marah”, “perlahan ikut mendekat”.'],
+['kesimpulan','Kesimpulan yang paling tepat dari teks adalah …',['Kesabaran dan ketenangan dapat mengubah sikap orang lain','Murid nakal harus selalu dihukum','Belajar hanya bisa saat terang','Hujan membuat orang malas'],'Gabungkan tokoh, konflik, latar, dan penyelesaian.']
+].map(a=>({k:a[0],p:P,q:a[1],o:a[2],f:a[3]}));
+const MT=[['💡','Tema','Gagasan utama yang mendasari cerita.','Cerita tentang Rara: keberanian harus disertai kebijaksanaan.'],
+['🧑‍🎤','Tokoh & Penokohan','Pelaku cerita dan watak yang ditampilkan lewat sikap, ucapan, dan tindakannya.','Rara: pemberani namun keras kepala.'],
+['🪜','Alur','Rangkaian peristiwa dari awal hingga penyelesaian.','Hujan deras → nekat menyeberang → perahu oleng → stabil.'],
+['🌧️','Latar','Tempat, waktu, dan suasana.','Dermaga Senja, sore hari, hujan deras: suasana menegangkan.'],
+['⚡','Konflik','Masalah yang menggerakkan cerita.','Keinginan Rara menjemput adik berbenturan dengan larangan Pak Nelayan.'],
+['👁️','Sudut Pandang','Posisi pencerita dalam menyampaikan peristiwa.','“Rara panik” → orang ketiga (pencerita di luar cerita).'],
+['💌','Amanat','Pesan atau nilai yang dapat diambil dari cerita.','Dengarkan nasihat orang bijak dan tetap tenang.']];
+const ED=[[0,1,'Tokoh → Konflik','Watak tokoh melahirkan konflik. Rara yang keras kepala memilih melawan larangan, maka muncul konflik.'],
+[3,4,'Latar → Suasana','Latar membentuk suasana dan peristiwa. Hujan deras dan angin kencang membuat suasana tegang dan perahu oleng.'],
+[1,2,'Konflik → Alur','Konflik menggerakkan alur. Perahu oleng memicu panik (klimaks), lalu tenang (penyelesaian).'],
+[2,5,'Semua unsur → Makna','Seluruh unsur bersama membangun makna: keberanian perlu disertai sikap mau mendengar nasihat.']];
+const NODES=[['Tokoh',70,45],['Konflik',250,45],['Alur',430,45],['Latar',70,150],['Suasana',250,150],['Makna Cerita',430,150]];
+
+const R=[
+()=>{M.innerHTML=`<div class=card><div class=big>🦉📖</div><h1>Bedah Cerita</h1><p>Misi: jadi detektif sastra! Temukan bagaimana <b>unsur intrinsik</b> dalam cerita saling memengaruhi. Kumpulkan XP, naik level, dan buka lencana.</p><p><b>Cara main:</b> kerjakan misi berurutan lewat menu di atas. Jawaban benar memberi XP; jawaban benar beruntun memberi bonus.</p><label>Siapa namamu?<br><input id=nm type=text maxlength=20 placeholder="Tulis namamu"></label><br><button class=btn onclick="S.name=$('#nm').value.trim()||'Sahabat Cerita';fin(0);bdg('🎒','Siap Berpetualang');go(1)">Mulai petualangan ▶</button></div>`},
+()=>{let s=0;const v=()=>{M.innerHTML=`<div class=card><h2>Mengapa cerita bisa berubah?</h2><p>Halo, ${S.name}! Perhatikan dua situasi. Tokohnya sama.</p><div class=two><div class=sc style="background:#4a5a9c">🌧️🚶<br>Jalan sepi saat hujan</div><div class=sc style="background:#e8a200">☀️🚶‍♀️🛵<br>Jalan ramai siang hari</div></div>`+(s==0?`<h3>Jika tokohnya sama, mengapa suasana dan kemungkinan kejadiannya terasa berbeda?</h3>${['Tempatnya berbeda','Waktunya berbeda','Keadaan tokohnya berbeda','Semua dapat memengaruhi cerita'].map(t=>`<button class=opt>${t}</button>`).join('')}`:`<h3>Tantangan: bagaimana jika tokoh utama tiba-tiba berubah sifat?</h3>${['Ceritanya jadi lain','Masalahnya ikut berubah','Akhir ceritanya mungkin berbeda'].map(t=>`<button class=opt>${t}</button>`).join('')}`)+'<div id=r></div></div>';
+M.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{if(s==0){$('#r').innerHTML='<div class="fb y">Menarik! Setiap pilihanmu bisa jadi benar. Kita cari tahu alasannya nanti.</div><button class=btn id=c>Lanjut ke tantangan ▶</button>';$('#c').onclick=()=>{s=1;v()}}else{xp(10);fin(1);$('#r').innerHTML='<div class="fb y">Simpan pertanyaanmu! Kita bongkar jawabannya di misi berikutnya.</div>'+nx(1)}})};v()},
+()=>{M.innerHTML='<div class=card><h2>Asesmen Awal</h2><p>Tenang, ini bukan ujian. Kita hanya ingin tahu titik awalmu.</p><div id=q></div></div>';quiz($('#q'),AW,{diag:1,end:(s)=>{S.aw=s;fin(2);bdg('🧭','Peta Awal Terpetakan');$('#q').innerHTML=`<div class=big>🧭</div><h3>Skor awalmu: ${s}/${AW.length}</h3><p>${s<3?'Belum masalah! Materi berikutnya akan membantu.':'Bagus, kamu sudah punya modal!'}</p>`+nx(2)}})},
+()=>{const seen=new Set();M.innerHTML='<div class=card><h2>Materi Pokok</h2><p>Buka ketujuh kartu unsur intrinsik, lalu jelajahi peta hubungannya.</p><div class=grid id=g></div><div id=d class=tip>Pilih sebuah kartu 👆</div></div><div class=card><h3>Peta Hubungan Antarunsur</h3><p>Ketuk garis ungu untuk melihat pengaruhnya.</p><svg viewBox="0 0 520 200" width="100%" id=sv></svg><div class=tip id=et>Contoh cerita: Rara menyeberang saat hujan.</div></div><div id=nxt></div>';
+$('#g').innerHTML=MT.map((c,i)=>`<button class=opt data-i=${i}>${c[0]}<br>${c[1]}</button>`).join('');
+$('#g').querySelectorAll('.opt').forEach(b=>b.onclick=()=>{const c=MT[+b.dataset.i];seen.add(+b.dataset.i);b.classList.add('y');$('#d').innerHTML=`<b>${c[0]} ${c[1]}</b><br>${c[2]}<br><i>Contoh: ${c[3]}</i><br><button class=btn onclick="say('${c[1]}. ${c[2]}')">🔊 Dengarkan</button>`;
+if(seen.size==7&&!S.done.includes(3)){xp(20);fin(3);bdg('📚','Kolektor Konsep');$('#nxt').innerHTML=nx(3)}});
+$('#sv').innerHTML=ED.map((e,i)=>{const a=NODES[e[0]],b=NODES[e[1]];return`<line class=edge data-i=${i} x1=${a[1]+(b[1]>a[1]?50:0)} y1=${a[2]+(b[2]>a[2]?15:0)} x2=${b[1]-(b[1]>a[1]?50:0)} y2=${b[2]-(b[2]>a[2]?15:0)} marker-end=none />`}).join('')+NODES.map(n=>`<rect class=node x=${n[1]-55} y=${n[2]-18} width=110 height=36 rx=12 /><text x=${n[1]} y=${n[2]+5} text-anchor=middle>${n[0]}</text>`).join('');
+$('#sv').querySelectorAll('.edge').forEach(l=>l.onclick=()=>{document.querySelectorAll('.edge').forEach(x=>x.classList.remove('on'));l.classList.add('on');const e=ED[+l.dataset.i];$('#et').innerHTML=`<b>${e[2]}</b><br>${e[3]}`})},
+()=>{const mk=(c,t)=>`<mark class=m${c} onclick="$('#tp').textContent='Unsur: ${{T:'Tokoh & penokohan',L:'Latar',K:'Konflik'}[c]}'">${t}</mark>`;
+const story=`Sore itu hujan deras mengguyur ${mk('L','Dermaga Senja')}. ${mk('T','Rara, gadis pemberani namun keras kepala')}, ${mk('K','nekat menyeberang dengan perahu kecil meski dilarang Pak Nelayan')}. Ia ingin menjemput adiknya yang terjebak di pulau seberang. ${mk('K','Angin kencang membuat perahu oleng.')} Rara panik, tetapi ia teringat pesan ${mk('T','Pak Nelayan yang bijak')}: tenanglah dan ikuti cahaya mercusuar. Perlahan, perahunya mulai stabil.`;
+const step=n=>{const c=$('#sim');
+if(n==1)c.innerHTML=`<h3>Misi 1 · Baca & temukan bukti</h3><blockquote>${story}</blockquote><div class=tip id=tp>Ketuk bagian yang ber-highlight untuk melihat unsurnya.</div><button class=btn id=b>Lanjut ke Misi 2 ▶</button>`;
+if(n==2){const it=[['Rara, gadis pemberani namun keras kepala','Tokoh'],['Dermaga Senja saat hujan deras','Latar'],['Rara melawan larangan demi menjemput adik','Konflik'],['Pak Nelayan yang bijak dan perhatian','Tokoh'],['Perahu oleng diterjang angin dan ombak','Konflik'],['Sore hari, laut berombak tinggi','Latar']];let sel=null,left=it.length,hit=0;
+c.innerHTML=`<h3>Misi 2 · Pilah informasi</h3><p>Ketuk kartu, lalu ketuk kategori yang cocok.</p><div id=ch>${it.map((x,i)=>`<button class=chip data-i=${i}>${x[0]}</button>`).join('')}</div>${['Tokoh','Latar','Konflik'].map(k=>`<button class=cat data-k=${k}><b>${k}</b><br></button>`).join('')}<div id=fb2></div>`;
+c.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{c.querySelectorAll('.chip').forEach(x=>x.classList.remove('sel'));b.classList.add('sel');sel=b});
+c.querySelectorAll('.cat').forEach(b=>b.onclick=()=>{if(!sel)return toast('Pilih kartu dulu 👆');const y=it[+sel.dataset.i][1]==b.dataset.k;if(y){hit++;xp(5);b.insertAdjacentHTML('beforeend',`<span>${sel.textContent}</span>`);sel.remove();sel=null;left--}else{toast('Belum cocok, coba kategori lain');}
+if(!left){$('#fb2').innerHTML=`<div class="fb y">Semua terpilah! 🎉</div><button class=btn id=b>Lanjut ke Misi 3 ▶</button>`;$('#b').onclick=()=>step(3)}})}
+if(n==3){c.innerHTML='<h3>Misi 3 · Hubungkan unsur</h3><div id=q></div>';quiz($('#q'),[{k:'hubungan',q:'Tokoh → Konflik. Mana yang tepat?',o:['Sifat keras kepala Rara membuatnya melawan larangan','Sifat Rara menentukan nama dermaga','Rara keras kepala karena hujan berhenti','Pak Nelayan bijak karena perahu kecil'],f:'Watak tokoh melahirkan konflik.'},{k:'hubungan',q:'Latar → Suasana/peristiwa. Mana yang tepat?',o:['Hujan dan angin kencang membuat suasana tegang dan perahu oleng','Dermaga membuat Rara punya adik','Sore hari mengubah sifat Pak Nelayan','Mercusuar menentukan nama tokoh'],f:'Latar membentuk suasana dan peristiwa.'},{k:'hubungan',q:'Konflik → Alur. Mana yang tepat?',o:['Perahu oleng memicu kepanikan yang mendorong cerita ke puncak masalah','Konflik menghentikan cerita','Konflik mengubah sudut pandang','Konflik membuat latar menghilang'],f:'Konflik menggerakkan alur.'}],{xp:10,end:()=>{c.innerHTML='<div class=fb>Hubungan terpetakan! 🧩</div><button class=btn id=b>Lanjut ke Misi 4 ▶</button>';$('#b').onclick=()=>step(4)}})}
+if(n==4){c.innerHTML=`<h3>Misi 4 · Prediksi dengan bukti</h3><blockquote>${story}</blockquote><div id=q></div>`;quiz($('#q'),[{k:'prediksi',q:'Apa kelanjutan yang paling logis? Bukti: Rara mulai tenang dan mengikuti mercusuar.',o:['Rara tiba di pulau dan sadar larangan itu demi keselamatannya','Perahu tiba-tiba menjadi kapal besar','Rara pulang dan melupakan adiknya','Pak Nelayan berubah jadi pelaut asing'],f:'Prediksi harus bersandar pada petunjuk di teks.'}],{xp:10,end:()=>step(5)})}
+if(n==5){const sel=(id,o)=>`<select id=${id}><option value=x>pilih…</option>${o.map((t,i)=>`<option value=${i}>${t}</option>`).join('')}</select>`;
+c.innerHTML=`<h3>Misi 5 · Susun kesimpulan</h3><p>Lengkapi pola: <b>Perubahan … menyebabkan … sehingga …</b></p><p>Perubahan ${sel('s1',['sikap Rara dari nekat menjadi tenang','cuaca dari hujan menjadi cerah','nama perahu Rara'])} menyebabkan ${sel('s2',['Rara mengikuti arah mercusuar dan perahu kembali stabil','Pak Nelayan datang dengan kapal besar','adiknya tiba-tiba muncul'])} sehingga ${sel('s3',['ia menyadari nasihat Pak Nelayan benar','ia berhenti sekolah','ia tak pernah ke dermaga lagi'])}.</p><button class=btn id=b>Periksa</button><div id=r></div>`;
+$('#b').onclick=()=>{const w=[1,2,3].filter(n=>$('#s'+n).value!=='0');if(w.length){$('#r').innerHTML=`<div class="fb n">Cek lagi bagian ke-${w.join(', ')} ya. Cari buktinya di cerita.</div>`}else{xp(15);fin(4);bdg('🧩','Ahli Hubungan');$('#sim').innerHTML=`<div class=big>🏅</div><h3>Bedah cerita tuntas!</h3><p>Kamu bisa mengenali, menghubungkan, memprediksi, dan menyimpulkan.</p>`+nx(4)}}}
+if(n<3||n==1)document.querySelector('#b')&&($('#b').onclick=()=>step(n+1))};
+M.innerHTML='<div class=card id=sim></div>';step(1)},
+()=>{M.innerHTML='<div class=card><h2>Kuis Penguatan</h2><div id=q></div></div>';quiz($('#q'),KZ,{xp:10,end:(s)=>{fin(5);if(s==KZ.length)bdg('🌟','Kuis Sempurna');$('#q').innerHTML=`<div class=big>🎯</div><h3>Skor kuis: ${s}/${KZ.length}</h3>`+nx(5)}})},
+()=>{M.innerHTML='<div class=card><h2>Asesmen Akhir</h2><p>Teks baru! Tunjukkan kemampuanmu menelusuri bukti dalam teks.</p><div id=q></div></div>';quiz($('#q'),AK,{xp:10,end:(s,tg)=>{S.ak=s;for(const k in tg){S.tg[k]=tg[k]}fin(6);if(pct(s,AK.length)>=80)bdg('🏆','Maestro Cerita');$('#q').innerHTML=`<div class=big>🏁</div><h3>Skor akhir: ${s}/${AK.length}</h3>`+nx(6)}})},
+()=>{M.innerHTML=`<div class=card><h2>Refleksi</h2><p>Seberapa paham kamu sekarang? <b id=sv2>3</b>/5</p><input type=range min=1 max=5 value=3 style="width:100%" oninput="$('#sv2').textContent=this.value"><h3>Yang sudah bisa kulakukan:</h3>${['Mengenali unsur intrinsik','Menjelaskan hubungan antarunsur','Menentukan pengaruh latar dan tokoh','Memprediksi kelanjutan cerita','Menyimpulkan berdasarkan bukti'].map(t=>`<label><input type=checkbox> ${t}</label><br>`).join('')}<p>Unsur paling mudah: <select>${MT.map(m=>`<option>${m[1]}</option>`).join('')}</select><br>Unsur paling sulit: <select>${MT.map(m=>`<option>${m[1]}</option>`).join('')}</select></p><label>Perasaan dan kesanku:<textarea rows=2></textarea></label><label>Rencanaku agar makin jago membaca dan menganalisis cerita:<textarea rows=2></textarea></label><button class=btn id=b>Simpan refleksi ✔</button></div>`;
+$('#b').onclick=()=>{xp(15);fin(7);bdg('🪞','Si Reflektif');go(8)}},
+()=>{const rc={identifikasi:'Ulangi kartu Materi dan sebutkan contoh tiap unsur.',hubungan:'Latih Peta Hubungan: tanyakan “unsur apa memengaruhi unsur apa?”.',prediksi:'Sebelum menebak, garis bawahi bukti di teks.',inferensi:'Cari kata kunci perubahan sikap tokoh lalu jelaskan penyebabnya.',kesimpulan:'Rangkum dengan pola “Perubahan … menyebabkan … sehingga …”.'};
+let w=Object.entries(S.tg).sort((a,b)=>pct(...a[1])-pct(...b[1]))[0];const g=(S.ak||0)-(S.aw||0);
+M.innerHTML=`<div class=card><h2>Hasil Belajar ${S.name}</h2><div class=res><span>Asesmen awal</span><div class=bar><i style="width:${pct(S.aw,5)}%"></i></div><b>${S.aw??'-'}/5</b></div><div class=res><span>Asesmen akhir</span><div class=bar><i style="width:${pct(S.ak,8)}%"></i></div><b>${S.ak??'-'}/8</b></div><p>${S.xp} XP · ${TT[Math.min(4,Math.floor(S.xp/60))]}</p><p>${g>0?'Kemampuanmu meningkat! 📈':'Terus berlatih, kamu pasti bisa! 💪'}</p><h3>Lencana</h3><p>${S.bd.map(b=>b[0]+' '+b[1]).join('<br>')}</p><h3>Rekomendasi</h3><p>${w?`Fokus berikutnya: <b>${w[0]}</b>. ${rc[w[0]]}`:'Selesaikan asesmen akhir untuk mendapat rekomendasi.'}</p><button class="btn g" onclick="location.reload()">Main lagi 🔁</button></div>`}];
+go(0);
+</script></body></html>
